@@ -1,0 +1,41 @@
+Konwencja nazewnictwa
+
+[PPP] - pakiet
+[NAZWA] - nazwa elementu
+l/g - zmienna lokalna / zmienna globalna
+
+Dictionay:
+Element danych - Z[PPP]_E_[NAZWA]
+Domena - Z[PPP]_D_[NAZWA]
+Typ tabeli - Z[PPP]_TAB_[NAZWA]
+Struktura - Z[PPP]_STR_[NAZWA]
+Wglądy - Z[PPP]_V_[NAZWA]
+Tabela bazy danych - Z[PPP]_[NAZWA]
+Programy  - Z[PPP]_[NAZWA]
+Grupy funkcyjne - Z[PPP]_[NAZWA]
+Moduły funkcyjne - Z_[PPP]_[NAZWA]
+Klasy - ZCL_[PPP]_[NAZWA]
+Interfejsy - ZIF_[PPP]_[NAZWA]
+
+
+Elementy w kodzie:
+
+Sposób nazewnictwa [zasieg]_[typ]_[nazwa]
+
+Możliwy zasięg: 
+l - lokalny
+g - globalny
+m - zmienne w klasie
+i - zmienna importowana do metod/funkcji
+e - zmienna eksportowa z metod/funkcji
+r - zmienna zwracana z metod
+c - wartość zmienana w funckji
+
+Możliwe typy:
+str - Struktura
+tab - Tabela
+var - wartość
+rcl - referencja do klasa (ref to object)
+rda - referacja do danych (ref to data)
+con - stała
+ty - typy lokalne (types begin of)
