@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
@@ -7,8 +7,8 @@
     <DDLANGUAGE>L</DDLANGUAGE>
     <DATATYPE>CURR</DATATYPE>
     <LENG>000013</LENG>
-    <DECIMALS>000002</DECIMALS>
     <OUTPUTLEN>000016</OUTPUTLEN>
+    <DECIMALS>000002</DECIMALS>
     <DDTEXT>Cena</DDTEXT>
    </DD01V>
   </asx:values>

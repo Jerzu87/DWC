@@ -56,6 +56,7 @@ CLASS lcl_events IMPLEMENTATION.
         MESSAGE 'Blad dodawania do koszyka' TYPE 'E'.
       ENDIF.
     ENDIF.
+  ENDMETHOD.
   METHOD on_toolbar_0200.
     DATA: ls_str_btn TYPE stb_button.
     ls_str_btn-function = 'SAVE_ORDER'.
@@ -130,9 +131,11 @@ MODULE status_0100 OUTPUT.
 
   IF g_rcl_cont_0100 IS INITIAL.
     CREATE OBJECT g_rcl_cont_0100
-      EXPORTING container_name = 'CONT_0100'.
+      EXPORTING
+        container_name = 'CONT_0100'.
     CREATE OBJECT g_rcl_alv_0100
-      EXPORTING i_parent = g_rcl_cont_0100.
+      EXPORTING
+        i_parent = g_rcl_cont_0100.
 
     g_tab_products = g_rcl_manager->get_products( ).
 
@@ -170,9 +173,11 @@ MODULE status_0200 OUTPUT.
 
   IF g_rcl_cont_0200 IS INITIAL.
     CREATE OBJECT g_rcl_cont_0200
-      EXPORTING container_name = 'CONT_0200'.
+      EXPORTING
+        container_name = 'CONT_0200'.
     CREATE OBJECT g_rcl_alv_0200
-      EXPORTING i_parent = g_rcl_cont_0200.
+      EXPORTING
+        i_parent = g_rcl_cont_0200.
 
     DATA: lt_tab_fcat TYPE lvc_t_fcat,
           ls_str_fcat TYPE lvc_s_fcat.
@@ -217,9 +222,11 @@ MODULE status_0300 OUTPUT.
 
   IF g_rcl_cont_0300 IS INITIAL.
     CREATE OBJECT g_rcl_cont_0300
-      EXPORTING container_name = 'CONT_0300'.
+      EXPORTING
+        container_name = 'CONT_0300'.
     CREATE OBJECT g_rcl_alv_0300
-      EXPORTING i_parent = g_rcl_cont_0300.
+      EXPORTING
+        i_parent = g_rcl_cont_0300.
 
     CALL METHOD g_rcl_alv_0300->set_table_for_first_display
       EXPORTING
