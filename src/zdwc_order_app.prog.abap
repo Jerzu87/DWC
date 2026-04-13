@@ -157,9 +157,11 @@ MODULE user_command_0100 INPUT.
     WHEN 'BACK' OR 'EXIT' OR 'CANC'.
       LEAVE PROGRAM.
     WHEN 'CART'.
-      CALL SCREEN 200.
+      LEAVE TO SCREEN 200.
     WHEN 'HIST'.
-      CALL SCREEN 300.
+      LEAVE TO SCREEN 300.
+    WHEN 'PROD'.
+      LEAVE TO SCREEN 100.
   ENDCASE.
   CLEAR g_var_okcode.
 ENDMODULE.
@@ -206,6 +208,12 @@ ENDMODULE.
 MODULE user_command_0200 INPUT.
   CASE g_var_okcode.
     WHEN 'BACK' OR 'EXIT' OR 'CANC'.
+      LEAVE PROGRAM.
+    WHEN 'CART'.
+      LEAVE TO SCREEN 200.
+    WHEN 'HIST'.
+      LEAVE TO SCREEN 300.
+    WHEN 'PROD'.
       LEAVE TO SCREEN 100.
   ENDCASE.
   CLEAR g_var_okcode.
@@ -243,6 +251,12 @@ ENDMODULE.
 MODULE user_command_0300 INPUT.
   CASE g_var_okcode.
     WHEN 'BACK' OR 'EXIT' OR 'CANC'.
+      LEAVE PROGRAM.
+    WHEN 'CART'.
+      LEAVE TO SCREEN 200.
+    WHEN 'HIST'.
+      LEAVE TO SCREEN 300.
+    WHEN 'PROD'.
       LEAVE TO SCREEN 100.
   ENDCASE.
   CLEAR g_var_okcode.
